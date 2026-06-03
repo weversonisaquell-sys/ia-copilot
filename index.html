@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assistente Web (inspirado)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Assistente Web (versão limitada)</h1>
+
+    <section id="controls" class="panel">
+      <label>Modo:
+        <select id="mode">
+          <option value="offline">Offline (grátis, limitado)</option>
+          <option value="proxy">Proxy (requer servidor)</option>
+          <option value="openai">OpenAI (requer chave)</option>
+        </select>
+      </label>
+      <label>Chave OpenAI (opcional, não guarde em servidores públicos):
+        <input id="openaiKey" type="password" placeholder="sk-..." />
+      </label>
+      <button id="clear">Limpar conversa</button>
+    </section>
+
+    <section id="chat" class="panel">
+      <div id="messages" class="messages"></div>
+      <form id="inputForm">
+        <input id="prompt" autocomplete="off" placeholder="Escreva sua mensagem..." />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <small>Feito com tecnologias web. Veja README para configurar servidor e limites.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
