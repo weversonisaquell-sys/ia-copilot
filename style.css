@@ -1,0 +1,18 @@
+:root{
+  --bg:#0f1720; --panel:#0b1220; --accent:#6ee7b7; --muted:#9aa6b2; --msg-bg:#08101a;
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+body{margin:0;background:linear-gradient(180deg,#061024,#071225);color:#e6eef6;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.container{width:960px;max-width:96%;padding:20px}
+h1{margin:0 0 10px 0;font-size:20px}
+.panel{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-bottom:12px}
+#controls label{display:block;margin-bottom:8px;font-size:14px}
+#openaiKey{width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+.messages{height:360px;overflow:auto;padding:10px;background:var(--msg-bg);border-radius:6px;border:1px solid rgba(255,255,255,0.03)}
+.message{padding:8px 10px;border-radius:6px;margin-bottom:8px;max-width:85%}
+.user{background:linear-gradient(90deg,#0b6ad6,#0b9bd6);align-self:flex-end;color:white;margin-left:auto}
+.assistant{background:rgba(255,255,255,0.03);color:var(--muted);margin-right:auto}
+#inputForm{display:flex;gap:8px;margin-top:10px}
+#prompt{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#012117;cursor:pointer}
+footer{margin-top:8px;color:var(--muted);font-size:13px}
